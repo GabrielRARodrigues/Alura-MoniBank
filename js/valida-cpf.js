@@ -5,9 +5,7 @@ export default function ehUmCPF(campo) {
     validaPrimeiroDigito(cpf) ||
     validaSegundoDigito(cpf)
   ) {
-    console.log('Esse pf não existe!')
-  } else {
-    console.log('Existe!')
+    campo.setCustomValidity('Esse cpf não é valido')
   }
 }
 
